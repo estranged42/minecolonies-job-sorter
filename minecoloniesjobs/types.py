@@ -6,6 +6,7 @@ from typing import Optional
 from enum import Enum, auto
 import copy
 import random
+import config
 
 
 class AutoNameEnum(Enum):
@@ -88,10 +89,12 @@ class JobSet:
     _current_index: int = 0
 
     def __init__(self, jobs: list[Job]) -> None:
+        global primary_skill_weight
+        global secondary_skill_weight
         self.jobs = jobs
         self.unassigned_jobs = copy.copy(jobs)
-        self.primary_weight = 1.0
-        self.secondary_weight = 0.7
+        self.primary_weight = config.primary_skill_weight
+        self.secondary_weight = config.secondary_skill_weight
 
     def __iter__(self):
         return self

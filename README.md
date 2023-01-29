@@ -101,3 +101,31 @@ By default each trial runs 5000 generations.
 ### Final Scoring
 
 Through emperical testing, I have found that about 5000 generations seems to arive at the best score that trial is going to get. Running it out to hundreds of thousands of generations doesn't seem to budge the score. However due to the randomized nature of the initial Job Set, successive trials can result in measurable improvements in the final score. Therefore I have chosen to run multiple full trials, picking the best out of all the trial results. By default there are 20 trials run.
+
+## Command Line Options
+
+Many of the defaults can be changed with command line options. See `python sort.py --help` for details.
+
+```bash
+usage: sort.py [-h] [-t TYPESFILE] [-j JOBSFILE]
+               [-c COLONISTSFILE] [-n NUMTRIALS]
+               [-g GENERATIONS] [-p PRIMARYWEIGHT]
+               [-s SECONDARYWEIGHT]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TYPESFILE, --typesfile TYPESFILE
+                        Worker Types input CSV file
+  -j JOBSFILE, --jobsfile JOBSFILE
+                        Jobs input CSV file
+  -c COLONISTSFILE, --colonistsfile COLONISTSFILE
+                        Colonists input CSV file
+  -n NUMTRIALS, --numtrials NUMTRIALS
+                        Number of Trials to run
+  -g GENERATIONS, --generations GENERATIONS
+                        Number of Generations per Trial
+  -p PRIMARYWEIGHT, --primaryweight PRIMARYWEIGHT
+                        Weight of the Primary Skill
+  -s SECONDARYWEIGHT, --secondaryweight SECONDARYWEIGHT
+                        Weight of the Secondary Skill
+```
