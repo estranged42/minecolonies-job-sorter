@@ -7,7 +7,7 @@ minecoloniesjobs.read_jobs("jobs.csv")
 minecoloniesjobs.read_colonists("colonists.csv")
 
 num_generations = 5000
-num_trials = 5
+num_trials = 20
 
 
 def run_trial():
