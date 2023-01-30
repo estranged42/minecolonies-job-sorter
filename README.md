@@ -76,9 +76,7 @@ That will kick off the trials and show you the best score from all the trials.
 
 ## How it Works
 
-This program uses a simplistic version of an [evolutionary algorithm](https://en.wikipedia.org/wiki/Evolutionary_algorithm) to sort colonists in to jobs in an attempt to find a 'pretty good' set of assignments where the overall skills of the colonists are well utilized. I don't say 'best' in any case here, as the randomized nature of the algorithm makes it difficult to say and given set og job assignments is the abolute 'best'. And 'best' is highly subjective for each player and set of colony restrictions.
-
-The basic steps are this:
+This program uses a simplistic version of an [evolutionary algorithm](https://en.wikipedia.org/wiki/Evolutionary_algorithm) to sort colonists in to jobs in an attempt to find a 'pretty good' set of assignments where the overall skills of the colonists are well utilized. I don't say 'best' in any case here, as the randomized nature of the algorithm makes it difficult to say any given set of job assignments is the abolute 'best'. And 'best' is highly subjective for each player and set of colony restrictions.
 
 ### A Trial
 

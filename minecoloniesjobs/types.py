@@ -164,6 +164,7 @@ class JobSet:
         # Pick a random job
         random_job_idx = random.randrange(len(self.jobs))
         first_job = self.jobs[random_job_idx]
+        # The first job picked might be empty. That's OK.
         if first_job.colonist != None:
             # Remove this colonist from the available_colonists
             available_colonists.remove(first_job.colonist)
